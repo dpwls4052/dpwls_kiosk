@@ -8,7 +8,6 @@ li {
 a {
   text-decoration: none;
 }
-@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 :root {
   --background-color: #435560;
   /* --darkmode-color: #0692e7; */
@@ -23,7 +22,7 @@ a {
 }
 body {
   margin: 0;
-  font-family: "NanumSquare", monda, sans-serif;
+  font-family: 나눔스퀘어, "NanumSquare", sans-serif;
   color: var(--textColor);
 }
 header {
