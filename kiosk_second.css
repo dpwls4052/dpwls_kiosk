@@ -8,6 +8,7 @@ li {
 a {
   text-decoration: none;
 }
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 :root {
   --background-color: #435560;
   /* --darkmode-color: #0692e7; */
