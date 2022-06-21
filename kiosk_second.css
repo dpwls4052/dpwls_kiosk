@@ -23,7 +23,7 @@ a {
 }
 body {
   margin: 0;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "NanumSquare", monda, sans-serif;
   color: var(--textColor);
 }
 header {
