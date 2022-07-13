@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIOSK</title>
+    <link rel="stylesheet" href="kiosk.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
+    />
+  </head>
+
+  <body>
+    <!-- class="container_pc_wrapper" → 다크모드 / class="container", class="product_wrapper" → 라이트모드 -->
+    <div class="container_pc_wrapper">
+      <div class="header">
+        <div class="header_container header_border">
+          <div class="logo_top">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <a href="main_page.html">
+            <div class="header_content">
+              <img src="images/home_color.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="container_pc product_container_kiosk">
+        <div class="close"><a href="###">X</a></div>
+        <div class="method_contents">
+          <div class="payment_title">결제수단</div>
+          <div class="method_content">
+            <a href="###">
+              <div class="method">
+                <img src="images/credit-card-color.png" alt="" />
+                <div class="method_name">신용카드</div>
+              </div>
+            </a>
+            <a href="###">
+              <div class="method">
+                <img src="images/smartphone-call-color.png" alt="" />
+                <div class="method_name">삼성페이</div>
+              </div>
+            </a>
+            <a href="###">
+              <div class="method">
+                <img src="images/barcode-scanner_color.png" alt="" />
+                <div class="method_name">모바일페이</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="method_explain">
+          <div class="payment_contents_top">
+            <ul>
+              <li class="top_li">상품명</li>
+              <li>헬스장</li>
+            </ul>
+            <ul>
+              <li class="top_li">추가옵션</li>
+              <li></li>
+            </ul>
+            <ul>
+              <li class="top_li">수량</li>
+              <li>1</li>
+            </ul>
+            <ul>
+              <li class="top_li">금액</li>
+              <li>2,000원</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="payment_contents_bottom">
+            <ul>
+              <li>주문금액</li>
+              <li>2,000원</li>
+            </ul>
+            <ul>
+              <li>할인금액</li>
+              <li>0</li>
+            </ul>
+            <ul class="total">
+              <li>총 결제금액</li>
+              <li>2,000원</li>
+            </ul>
+          </div>
+          <div class="payment_footer">
+            <div class="next total_payment">
+              <a href="card_guide.html">
+                <div>결제하기</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--X버튼을 눌렀을 때-->
+        <div class="modal" style="display: none">
+          <div class="pop_content">
+            <div class="pop_title">이전으로 돌아갑니다.</div>
+            <div class="pop_btns">
+              <button>확인</button>
+            </div>
+          </div>
+        </div>
+        <!--결제수단을 선택하지 않았을 때-->
+        <div class="modal" style="display: none">
+          <div class="pop_content">
+            <div class="pop_title">결제수단을 선택해주세요 !</div>
+            <div class="pop_btns">
+              <button>확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

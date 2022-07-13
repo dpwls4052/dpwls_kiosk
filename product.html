@@ -5,66 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KIOSK</title>
-    <link rel="stylesheet" href="kiosk_second.css" />
+    <link rel="stylesheet" href="kiosk.css" />
+    <link rel="stylesheet" href="swiper.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,600&amp;display=swap&amp;subset=korean"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
-      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
     />
   </head>
-  <!-- 두번째 시안 작업중 -->
+
   <body>
+    <!-- class="container_pc_wrapper" → 다크모드 / class="container", class="product_wrapper" → 라이트모드 -->
     <div class="container_pc_wrapper">
-      <header>
-        <div class="header_container">
+      <div class="header">
+        <div class="header_container header_border">
           <div class="logo_top">
             <img src="images/logo.png" alt="" />
           </div>
-          <a href="main_page_second.html">
+          <a href="main_page.html">
             <div class="header_content">
               <img src="images/home_color.png" alt="" />
             </div>
           </a>
         </div>
-      </header>
-      <div class="container_pc">
-        <div class="main_top">
-          <div class="main_top_contents">
-            <div class="pagetitle">상품분류를 선택해주세요 !</div>
+      </div>
+      <div class="container_pc product_container_kiosk">
+        <div class="main_top_product">
+          <div class="main_top">
+            <div class="main_top_contents">
+              <div class="pagetitle">상품분류를 선택해주세요 !</div>
+            </div>
           </div>
-        </div>
-        <div class="main_product">
-          <a href="product_detail.html">
-            <div class="product">
-              <img src="images/ex_1.png" alt="" />
-              <div class="img_content">상품 1</div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper main_product_container">
+              <div class="swiper-slide">
+                <div class="main_product_contents">
+                  <a href="product_detail.html">
+                    <div class="product">
+                      <img src="images/ex_1.png" alt="" />
+                      <div class="img_content">상품 1</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_2.jpg" alt="" />
+                      <div class="img_content">상품 2</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="main_product_contents">
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 3</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_4.jpg" alt="" />
+                      <div class="img_content">상품 4</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_product_contents">
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_1.png" alt="" />
+                      <div class="img_content">상품 5</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_2.jpg" alt="" />
+                      <div class="img_content">상품 6</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="main_product_contents">
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 7</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_4.jpg" alt="" />
+                      <div class="img_content">상품 8</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main_product_contents">
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_1.png" alt="" />
+                      <div class="img_content">상품 9</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_2.jpg" alt="" />
+                      <div class="img_content">상품 10</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="main_product_contents">
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 11</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product">
+                      <img src="images/ex_4.jpg" alt="" />
+                      <div class="img_content">상품 12</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </a>
-          <a href="###">
-            <div class="product">
-              <img src="images/ex_2.png" alt="" />
-              <div class="img_content">상품 2</div>
+            <div class="swiper-more">
+              <div class="swiper-button-next product_next"></div>
+              <div class="swiper-button-prev product_prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
-          </a>
-        </div>
-        <div class="main_product">
-          <a href="###">
-            <div class="product">
-              <img src="images/free-icon-qr-1287558.png" alt="" />
-              <div class="img_content">상품 3</div>
-            </div>
-          </a>
-          <a href="###">
-            <div class="product">
-              <img src="images/free-icon-qr-1287558.png" alt="" />
-              <div class="img_content">상품 4</div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
