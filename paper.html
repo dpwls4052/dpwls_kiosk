@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIOSK</title>
+    <link rel="stylesheet" href="kiosk.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
+    />
+  </head>
+
+  <body>
+    <!-- class="container_pc_wrapper" → 다크모드 / class="container", class="product_wrapper" → 라이트모드 -->
+    <div class="container_pc_wrapper">
+      <div class="header">
+        <div class="header_container header_border">
+          <div class="logo_top">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <a href="main_page.html">
+            <div class="header_content">
+              <img src="images/home_color.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="container_pc product_container_kiosk">
+        <div class="paper_content">
+          하단 종이로 QR코드 발급이 <br />
+          완료되었습니다.
+        </div>
+        <div class="paper_icon">
+          <img src="images/receipt_color.png" alt="" />
+        </div>
+        <div class="mobile_content">이용해주셔서 감사합니다.</div>
+        <div class="issue_footer">
+          <button>닫기 X</button>
+        </div>
+        <!-- 닫기버튼 누르면 첫번째 광고화면으로이동 -->
+      </div>
+    </div>
+  </body>
+</html>
+<!-- class="issue_footer" button을 안누를시 5초뒤 자동닫힘(첫번째 광고화면으로 돌아감) -->
