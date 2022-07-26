@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIOSK</title>
+    <link rel="stylesheet" href="kiosk.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
+    />
+  </head>
+
+  <body>
+    <!-- class="container_pc_wrapper" → 다크모드 / class="container", class="product_wrapper" → 라이트모드 -->
+    <div class="container_pc_wrapper">
+      <div class="header">
+        <div class="header_container header_border">
+          <div class="logo_top">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <a href="main_page.html">
+            <div class="header_content">
+              <img src="images/home_color.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="container_pc product_container_kiosk">
+        <div class="main_top_product">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper main_top second_contents">
+              <div class="swiper-slide">
+                <div class="second_content">
+                  <div class="second_product"><a href="###">1차</a></div>
+                  <div class="second_product"><a href="###">1차_1</a></div>
+                  <div class="second_product"><a href="###">1차_2</a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="second_content">
+                  <div class="second_product"><a href="###">1차_3</a></div>
+                  <div class="second_product"><a href="###">1차_4</a></div>
+                  <div class="second_product"><a href="###">1차_5</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next detail-second-next"></div>
+            <div class="swiper-button-prev detail-second-prev"></div>
+          </div>
+          <div class="how">
+            <div class="how_content">상품을 선택해주세요</div>
+            <div class="how_img">
+              <img src="images/what_color.png" alt="" />
+            </div>
+          </div>
+          <!-- 1차 누르면 나타나고 class="how" 사라짐 -->
+          <div class="swiper mySwiper" style="display: none">
+            <div class="swiper-wrapper product_detail_container">
+              <div class="swiper-slide">
+                <div class="product_detail_contents">
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_1.png" alt="" />
+                      <div class="img_content">상품 1</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_2.jpg" alt="" />
+                      <div class="img_content">상품 2</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 3</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="product_detail_contents">
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 4</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_4.jpg" alt="" />
+                      <div class="img_content">상품 5</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 6</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product_detail_contents">
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_1.png" alt="" />
+                      <div class="img_content">상품 7</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_2.jpg" alt="" />
+                      <div class="img_content">상품 8</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 9</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="product_detail_contents">
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 10</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_4.jpg" alt="" />
+                      <div class="img_content">상품 11</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                  <a href="###">
+                    <div class="product product_detail">
+                      <img src="images/ex_3.jpg" alt="" />
+                      <div class="img_content">상품 12</div>
+                      <div class="img_price">10,000원</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next detail-next"></div>
+            <div class="swiper-button-prev detail-prev"></div>
+            <div class="swiper-pagination detail-pagination"></div>
+          </div>
+        </div>
+        <!--상품을 선택하지 않았을 때-->
+        <div class="modal" style="display: none">
+          <div class="pop_content">
+            <div class="pop_title">상품을 먼저 선택해주세요 !</div>
+            <div class="pop_btns">
+              <button>확인</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer produt_footer">
+          <div class="next cost produt_cost">
+            <a href="payment.html">
+              <div class="price">
+                <div class="price_text">결재금액</div>
+                <div class="price_won" style="display: none">10,000원</div>
+                <!-- 상품누르면 나타남 -->
+              </div>
+              <div class="payment">결제하기</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

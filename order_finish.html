@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIOSK</title>
+    <link rel="stylesheet" href="kiosk.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
+    />
+  </head>
+  <body>
+    <div class="container_pc_wrapper">
+      <div class="header">
+        <div class="header_container">
+          <div class="logo_top">
+            <img src="images/logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container_pc">
+        <div class="main_top">
+          <div class="main_top_contents" style="padding: 0">
+            <div class="pagetitle">주문이 완료되었습니다.</div>
+            <div
+              class="description"
+              style="margin-top: 50px; line-height: 50px"
+            >
+              입력하신 번호로 QR코드 발급이<br />
+              완료되었습니다.
+            </div>
+            <!-- 모바일 발급 시 문구 -->
+            <div
+              class="description change"
+              style="margin-top: 50px; line-height: 50px"
+            >
+              하단 종이로 QR코드 발급이<br />
+              완료되었습니다.
+            </div>
+            <!-- <!-- 종이 발급 시 문구 -->
+            -->
+          </div>
+          <div class="wrapper">
+            <svg
+              class="checkmark"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 52 52"
+            >
+              <circle
+                class="checkmark__circle"
+                cx="26"
+                cy="26"
+                r="25"
+                fill="none"
+              />
+              <path
+                class="checkmark__check"
+                fill="none"
+                d="M14.1 27.2l7.1 7.2 16.7-16.8"
+              />
+            </svg>
+          </div>
+          <div class="description" style="padding: 0">
+            이용해주셔서 감사합니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
