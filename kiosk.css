@@ -82,8 +82,8 @@ body {
   bottom: 0;
   border-radius: 120px 120px 0px 0px;
   animation-name: up;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
 }
 @keyframes up {
   from {
@@ -170,7 +170,7 @@ body {
 .member:active,
 .nonmember:active,
 .key:active,
-.method_content a:active,
+.method_content a:focus,
 .total_payment a:active,
 .bottom:active {
   background-color: var(--point-color);
@@ -245,7 +245,8 @@ body {
   border: none;
   border-radius: 15px;
 }
-.number_box_content input:focus-visible {
+.number_box_content input:focus-visible,
+.guide_content .care:focus-visible {
   outline: none;
 }
 .phone {
@@ -374,6 +375,7 @@ body {
   font-size: 40px;
   padding-top: 100px;
   color: var(--font-color);
+  line-height: 60px;
 }
 .pop_inner_title {
   font-size: 36px;
@@ -620,7 +622,7 @@ body {
 }
 .close {
   display: flex;
-  margin: 50px 80px 30px 80px;
+  margin: 50px 80px 0px 80px;
   justify-content: flex-end;
 }
 .close a {
@@ -629,7 +631,7 @@ body {
 }
 .method_contents {
   margin: 0 80px;
-  margin-bottom: 360px;
+  margin-bottom: 310px;
 }
 .payment_title {
   font-size: 48px;
@@ -667,21 +669,43 @@ body {
   margin: 0 80px;
   border-radius: 40px;
   padding: 50px 30px;
-  display: flex;
-  justify-content: space-between;
-}
-.payment_contents_top ul {
-  text-align: center;
+  height: 215px;
 }
 .payment_contents_top ul li {
   font-size: 35px;
   color: var(--light-font-color);
-  padding-top: 20px;
+  width: 100%;
 }
-.payment_contents_top ul .top_li {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 30px;
+.payment_contents_top .top_ul {
+  display: flex;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.payment_contents_top .top_ul li {
+  font-weight: 600;
+}
+.payment_contents_top .scroll {
+  overflow-y: overlay;
+  height: 160px;
+}
+.payment_contents_top .scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.payment_contents_top .scroll::-webkit-scrollbar-thumb {
+  background-color: var(--button-color);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.payment_contents_top .scroll::-webkit-scrollbar-track {
+  background-color: var(--softgray-color);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px var(--softgray-color);
+}
+.payment_contents_top .scroll .bottom_ul {
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
 }
 .method_explain hr {
   margin: 50px 80px;
@@ -763,6 +787,51 @@ body {
     box-shadow: inset 0px 0px 0px 30px #7ac142;
   }
 }
+.payment_pop_content {
+  background-color: #f6f6f6;
+  width: 890px;
+  height: 1450px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 35px;
+  text-align: center;
+}
+.payment_pop_content .close a {
+  color: var(--background-color);
+}
+.payment_pop_content .guide_icon {
+  margin: 160px 0;
+}
+.payment_pop_content .guide_titile,
+.payment_pop_content .guide_content {
+  font-size: 45px;
+  line-height: 70px;
+  color: var(--background-color);
+}
+.guide_explain {
+  font-size: 60px;
+}
+.middle_explain,
+.payment_ing {
+  margin: 50px 0;
+}
+.care {
+  font-size: 35px;
+  color: tomato;
+}
+.change {
+  display: none;
+}
+#Timer,
+#Timertwo,
+#Timerthree {
+  border: none;
+  width: 40px;
+  background-color: unset;
+}
 /*light mode*/
 .container,
 .container .product_container_kiosk,
@@ -770,7 +839,8 @@ body {
 .container .second_product a:active,
 .container .third_product a:active,
 .container .method_content a,
-.container .issue_footer button {
+.container .issue_footer button,
+.container .pop_btns button:active {
   background-color: var(--light-background-color);
 }
 .container .total_payment a:active {
@@ -787,9 +857,6 @@ body {
 .container .next a,
 .container .payment .container .number_box_content,
 .container .number_box_content input,
-.container .pop_content .pop_title,
-.container .pop_content .pop_inner_title,
-.container .pop_content .pop_btns button,
 .container .footer_content,
 .container .prev_button a,
 .container .next_button a,
@@ -802,9 +869,7 @@ body {
 .container .paper_content,
 .container .method_name,
 .container .payment_contents_bottom ul li,
-.container .payment_contents_top ul li,
-.container .guide_titile p,
-.container .guide_content {
+.container .payment_contents_top ul li {
   color: var(--light-font-color);
 }
 .container .prev a,
@@ -825,8 +890,7 @@ body {
 .container .swiper-pagination-bullet,
 .container .mobile_icon img,
 .container .paper_icon img,
-.container .method img,
-.container .guide_icon img {
+.container .method img {
   filter: invert(50%);
 }
 .product_wrapper .header_container img {
@@ -841,7 +905,7 @@ body {
 .container .pop_content,
 .container .next,
 .product_wrapper,
-.container .method_content a:active,
+.container .method_content a:focus,
 .container .issue_footer button:active {
   background-color: var(--light-button-color);
 }
@@ -850,7 +914,7 @@ body {
 }
 .container .main_btn:active img,
 .product_wrapper .header_container img,
-.container .method_content a:active .method img {
+.container .method_content a:focus .method img {
   filter: none;
 }
 .container .member,
@@ -860,9 +924,6 @@ body {
 }
 .container .key:active {
   border-color: var(--light-button-color);
-}
-.container .pop_content .pop_btns button {
-  border-color: var(--light-font-color);
 }
 .container .timer,
 .container .img_price {
@@ -885,7 +946,8 @@ body {
 }
 .container .close a,
 .container .payment_title,
-.container .payment_contents_bottom .total li {
+.container .payment_contents_bottom .total li,
+.container .pop_btns button:active {
   color: var(--background-color);
 }
 .container .method_content a,
@@ -895,7 +957,7 @@ body {
 .container .payment_contents_top {
   background-color: var(--font-color);
 }
-.container .method_content a:active .method_name {
+.container .method_content a:focus .method_name {
   color: var(--font-color);
 }
 .container .checkmark__circle {
@@ -903,4 +965,13 @@ body {
 }
 .container .checkmark {
   box-shadow: inset 0px 0px 0px #7ac142;
+}
+.container .payment_contents_top .scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.container .payment_contents_top .scroll::-webkit-scrollbar-thumb {
+  background-color: var(--buttongd-color);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
 }
