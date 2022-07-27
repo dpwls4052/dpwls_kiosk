@@ -58,7 +58,7 @@ body {
   width: 110px;
 }
 .header_container .header_content img {
-  width: 40px;
+  width: 30px;
 }
 .container_pc_wrapper {
   background-color: var(--background-color);
@@ -93,25 +93,7 @@ body {
     transform: none;
   }
 }
-.how {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.how_content {
-  font-size: 48px;
-  color: var(--font-color);
-}
-.how_img {
-  margin-top: 45px;
-}
-.how_img img {
-  width: 100px;
-}
+
 .main_top {
   color: var(--font-color);
   text-align: center;
