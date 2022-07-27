@@ -55,7 +55,7 @@ body {
   color: var(--font-color);
 }
 .header_container img {
-  width: 150px;
+  width: 110px;
 }
 .header_container .header_content img {
   width: 40px;
@@ -712,6 +712,7 @@ body {
 }
 .method_explain hr {
   margin: 50px 80px;
+  background-color: var(--font-color);
 }
 .payment_contents_bottom {
   margin: 0 80px;
@@ -721,7 +722,7 @@ body {
   justify-content: space-between;
 }
 .payment_contents_bottom ul li {
-  font-size: 35px;
+  font-size: 30px;
   color: var(--softgray-color);
   padding-bottom: 20px;
 }
